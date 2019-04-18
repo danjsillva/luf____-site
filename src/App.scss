@@ -1,10 +1,10 @@
+$primary: #3e4095;
+$secondary: #1a1b49;
+
+@import "node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
 @import url("https://fonts.googleapis.com/css?family=Nunito:300");
 // @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
-
-$primary: #3e4095;
-$secondary: #1a1b49;
-@import "node_modules/bootstrap/scss/bootstrap";
 
 body {
   margin: 0;
@@ -13,6 +13,7 @@ body {
   font-size: 90%;
 }
 
+// ========================================================= Header
 .header-topbar {
   color: white;
   background-color: #1a1b49;
@@ -24,6 +25,7 @@ body {
   background-color: rgba(255, 255, 255, .7);
 }
 
+// ========================================================= Footer
 .footer-container {
   color: white;
   background-color: #1a1b49;
@@ -33,6 +35,7 @@ body {
   background-color: #ffc107;
 }
 
+// ========================================================= Home
 .home-banner {
   width: 100%;
   max-height: 100vh;

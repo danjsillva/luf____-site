@@ -23,7 +23,9 @@ export default function Footer(props) {
               <span className="d-block mb-3">45.055-555</span>
               <span className="d-block">(77) 3422-9240</span>
               <span className="d-block">contato@lufarma.com.br</span>
-              <span className="d-block mb-5">www.lufarma.com.br</span>
+              <span className="d-block mb-4">www.lufarma.com.br</span>
+
+              <button className="btn btn-primary btn-sm px-3 mb-5">Trabalhe conosco</button>
             </div>
 
             <div className="col-sm-12 col-md-4">
