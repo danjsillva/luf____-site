@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import Logo from "../assets/images/logo.png";
 
@@ -8,8 +10,8 @@ export default function Header(props) {
       <div className="header-topbar">
         <div className="container">
           <small>
-            <i className="fa fa-envelope" /> contato@lufarma.com.br{" "}
-            <i className="fa fa-phone ml-4" /> (77) 3422-9240
+            <FontAwesomeIcon icon={faPhone} /> (77) 3422-9240
+            <FontAwesomeIcon icon={faEnvelope} className="ml-3" /> contato@lufarma.com.br
           </small>
         </div>
       </div>
