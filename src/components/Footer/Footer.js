@@ -18,7 +18,7 @@ export default function Footer(props) {
           <div className="row">
             <div className="col-sm-12 col-md-4">
               <h5 className="text-warning">
-                LUFARMA DISTRIBUIDORA FARMAC LTDA
+                <strong>LUFARMA</strong> DISTRIBUIDORA FARMAC LTDA
               </h5>
               <span className="d-block">RUA U, 1175 - Felícia</span>
               <span className="d-block">Vitória da Conquista - BA</span>
@@ -33,18 +33,18 @@ export default function Footer(props) {
             </div>
 
             <div className="col-sm-12 col-md-4">
-              <h5 className="text-warning">TELEVENDAS</h5>
+              <h5 className="text-warning"><strong>TELEVENDAS</strong></h5>
               <small>Vitória da conquista</small>
               <h3>0800 284 5151</h3>
               <small>Feira de Santana</small>
               <h3 className="mb-5">0800 600 5152</h3>
 
-              <h5 className="text-warning">ATENDIMENTO</h5>
+              <h5 className="text-warning"><strong>ATENDIMENTO</strong></h5>
               <span className="d-block mb-5">Segunda à sexta: 8h às 19h</span>
             </div>
 
             <div className="col-sm-12 col-md-4">
-              <h5 className="text-warning">SOCIAL</h5>
+              <h5 className="text-warning"><strong>SOCIAL</strong> E CONTATO</h5>
               <a className="text-white" href="">
                 <FontAwesomeIcon icon={faFacebook} size="3x" />
               </a>
@@ -61,7 +61,7 @@ export default function Footer(props) {
                 <FontAwesomeIcon icon={faEnvelope} size="3x" />
               </a>
 
-              <h5 className="text-warning mt-5">LINKS ÚTEIS</h5>
+              <h5 className="text-warning mt-5"><strong>LINKS</strong> ÚTEIS</h5>
               <a className="text-white d-block" href="">
                 Anvisa
               </a>

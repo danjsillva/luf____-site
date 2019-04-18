@@ -77,8 +77,7 @@ export default function Home(props) {
             style={{ marginTop: "50vh" }}
           >
             <h2>
-              Uma busca permanente pela excelência e qualidade dos produtos
-              comercializados
+              UMA BUSCA PERMANENTE PELA <strong className="text-warnin">EXCELÊNCIA E QUALIDADE</strong> DOS PRODUTOS COMERCIALIZADOS
             </h2>
           </div>
         </div>

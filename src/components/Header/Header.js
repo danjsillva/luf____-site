@@ -46,11 +46,11 @@ export default function Header(props) {
             <img src={Logo} alt="logo" />
           </div>
           <div className="navbar-menu">
-            <button className="btn">Home</button>
-            <button className="btn">Sobre</button>
-            <button className="btn">Catálogo</button>
-            <button className="btn">Contato</button>
-            <button className="btn btn-primary">Faça seu pedido</button>
+            <button className="btn btn-sm">Home</button>
+            <button className="btn btn-sm">Sobre</button>
+            <button className="btn btn-sm">Catálogo</button>
+            <button className="btn btn-sm">Contato</button>
+            <button className="btn btn-sm btn-primary">Faça seu pedido</button>
           </div>
         </div>
       </div>
