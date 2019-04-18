@@ -15,12 +15,64 @@ const PageDownLink = props => (
   </div>
 );
 
+const SectionPartiners = props => (
+  <section className="">
+    <div className="container py-5">
+      <div class="row">
+        <div class="col-2">
+          <img
+            className="partner-image"
+            src={require("../../assets/images/partners/ems.png")}
+            alt="ems"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            className="partner-image"
+            src={require("../../assets/images/partners/globo.png")}
+            alt="globo"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            className="partner-image"
+            src={require("../../assets/images/partners/medley.png")}
+            alt="medley"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            className="partner-image"
+            src={require("../../assets/images/partners/mult.png")}
+            alt="mult"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            className="partner-image"
+            src={require("../../assets/images/partners/natulab.png")}
+            alt="natulab"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            className="partner-image"
+            src={require("../../assets/images/partners/neo.png")}
+            alt="neo"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
 export default function Home(props) {
   return (
     <>
       <section id="home-banner">
         <div className="container">
           <div
+            id="home-banner-text"
             className="text-primar text-right float-right w-50"
             style={{ marginTop: "50vh" }}
           >
@@ -69,6 +121,8 @@ export default function Home(props) {
       <br />
       <br />
       <br />
+
+      <SectionPartiners />
     </>
   );
 }

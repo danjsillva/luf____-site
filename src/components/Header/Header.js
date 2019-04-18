@@ -25,11 +25,19 @@ export default function Header(props) {
     <header>
       <div className="header-topbar">
         <div className="container">
-          <small>
-            <FontAwesomeIcon icon={faPhone} /> (77) 3422-9240
-            <FontAwesomeIcon icon={faEnvelope} className="ml-3" />{" "}
-            contato@lufarma.com.br
-          </small>
+          <div className="row">
+            <div className="col">
+              <small>
+                <FontAwesomeIcon icon={faPhone} /> (77) 3422-9240
+                <FontAwesomeIcon icon={faEnvelope} className="ml-3" /> contato@lufarma.com.br
+              </small>
+            </div>
+            <div className="col text-right">
+              <small>
+                <a href="" className="text-white">Acessar WebMail</a>
+              </small>
+            </div>
+          </div>
         </div>
       </div>
       <div className={navbarStyle}>
