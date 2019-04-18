@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import WppButton from './components/WppButton/WppButton'
+import ActionButton from './components/ActionButton/ActionButton'
 
 import Router from './Router'
 
@@ -18,7 +18,7 @@ export default function App(props) {
 
       <Footer />
       
-      <WppButton />
+      <ActionButton />
     </BrowserRouter>
   );
 }

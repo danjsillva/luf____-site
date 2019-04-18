@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-import "./Styles.scss";
+import "./Header.scss";
 
 import Logo from "../../assets/images/logo.png";
 

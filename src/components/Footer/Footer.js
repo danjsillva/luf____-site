@@ -8,7 +8,7 @@ import {
   faSkype
 } from "@fortawesome/fontawesome-free-brands";
 
-import "./Styles.scss";
+import "./Footer.scss";
 
 export default function Footer(props) {
   return (

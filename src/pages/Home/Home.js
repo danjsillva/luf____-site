@@ -2,6 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
 
+import "./Home.scss";
+
 const PageDownLink = props => (
   <div
     className="text-center w-100"
