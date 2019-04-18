@@ -11,7 +11,24 @@
     cover;
 }
 
-#home-banner-text {
+.mvv-card:hover {
+
+}
+.mvv-number {
+  font-size: 16em;
+  line-height: .8em;
+}
+.mvv-text {
+  position: absolute;
+  top: 24px;
+  left: 92px;
+  min-height: 200px;
+  padding: 10px;
+  background-color: white;
+  transition: all 0.5s ease;
+}
+.mvv-text:hover {
+  transform: scale(1.07);
 }
 
 .partner-image {
