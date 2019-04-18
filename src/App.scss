@@ -2,7 +2,7 @@ $primary: #3e4095;
 $secondary: #1a1b49;
 
 @import "node_modules/bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300");
 @import url("https://fonts.googleapis.com/css?family=Nunito:300");
 // @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
 
@@ -11,28 +11,6 @@ body {
   padding: 0;
   font-family: Ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 90%;
-}
-
-// ========================================================= Header
-.header-topbar {
-  color: white;
-  background-color: #1a1b49;
-}
-.header-navbar {
-  position: absolute;
-  width: 100%;
-  padding-top: 64px;
-  background-color: rgba(255, 255, 255, .7);
-}
-
-// ========================================================= Footer
-.footer-container {
-  color: white;
-  background-color: #1a1b49;
-}
-.footer-bar {
-  color: white;
-  background-color: #ffc107;
 }
 
 // ========================================================= Home
@@ -44,6 +22,7 @@ body {
 
 #home-banner {
   width: 100%;
-  height: 96vh;
-  background: url('./assets/images/woman-pharma.jpg') no-repeat 50% fixed / cover;
+  height: 96.95vh;
+  background: url("./assets/images/woman-pharma.jpg") no-repeat 50% fixed /
+    cover;
 }

@@ -8,10 +8,12 @@ import {
   faSkype
 } from "@fortawesome/fontawesome-free-brands";
 
+import "./Styles.scss";
+
 export default function Footer(props) {
   return (
     <footer>
-      <div className="footer-container">
+      <div className="bg-secondary text-white">
         <div className="container py-5">
           <div className="row">
             <div className="col-sm-12 col-md-4">
@@ -25,7 +27,9 @@ export default function Footer(props) {
               <span className="d-block">contato@lufarma.com.br</span>
               <span className="d-block mb-4">www.lufarma.com.br</span>
 
-              <button className="btn btn-primary btn-sm px-3 mb-5">Trabalhe conosco</button>
+              <button className="btn btn-primary btn-sm px-3 mb-5">
+                Trabalhe conosco
+              </button>
             </div>
 
             <div className="col-sm-12 col-md-4">
@@ -77,7 +81,7 @@ export default function Footer(props) {
           </div>
         </div>
       </div>
-      <div className="footer-bar">
+      <div className="bg-warning text-white">
         <div className="container py-2">
           <small>
             Developed with <FontAwesomeIcon icon={faHeart} /> by{" "}
