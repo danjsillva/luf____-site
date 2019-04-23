@@ -23,6 +23,20 @@
   animation-name: fadein;
 }
 
+.header-navbar-menu {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+.header-navbar-item {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header-navbar-item a {
+  text-decoration: none !important;
+}
+
 @keyframes fadeout {
   from {
     background-color: rgba(255, 255, 255, 1);

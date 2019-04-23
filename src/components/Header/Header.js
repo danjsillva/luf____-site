@@ -29,12 +29,15 @@ export default function Header(props) {
             <div className="col">
               <small>
                 <FontAwesomeIcon icon={faPhone} /> (77) 3422-9240
-                <FontAwesomeIcon icon={faEnvelope} className="ml-3" /> contato@lufarma.com.br
+                <FontAwesomeIcon icon={faEnvelope} className="ml-3" />{" "}
+                contato@lufarma.com.br
               </small>
             </div>
             <div className="col text-right">
               <small>
-                <a href="" className="text-white">Acessar WebMail</a>
+                <a href="" className="text-white">
+                  Acessar WebMail
+                </a>
               </small>
             </div>
           </div>
@@ -45,13 +48,25 @@ export default function Header(props) {
           <div>
             <img src={Logo} alt="logo" />
           </div>
-          <div className="navbar-menu">
-            <button className="btn btn-sm">Home</button>
-            <button className="btn btn-sm">Sobre</button>
-            <button className="btn btn-sm">Catálogo</button>
-            <button className="btn btn-sm">Contato</button>
-            <button className="btn btn-sm btn-primary">Faça seu pedido</button>
-          </div>
+          <ul className="header-navbar-menu">
+            <li className="header-navbar-item">
+              <a href="/">HOME</a>
+            </li>
+            <li className="header-navbar-item">
+              <a href="/sobre">SOBRE</a>
+            </li>
+            <li className="header-navbar-item">
+              <a href="/catalogo">CATÁLOGO</a>
+            </li>
+            <li className="header-navbar-item">
+              <a href="/contato">CONTATO</a>
+            </li>
+            <li className="header-navbar-item">
+              <button className="btn btn-sm btn-primary px-3">
+                Faça seu pedido
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
