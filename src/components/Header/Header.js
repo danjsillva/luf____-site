@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faHeadset, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import "./Header.scss";
 
@@ -33,8 +33,8 @@ export default function Header(props) {
           <div className="row">
             <div className="col">
               <small>
-                <FontAwesomeIcon icon={faPhone} /> (77) 3422-9240
-                <FontAwesomeIcon icon={faEnvelope} className="ml-3" />{" "}
+                <FontAwesomeIcon icon={faHeadset} size="lg" /> 0800 284 5151 / 0800 600 5152
+                <FontAwesomeIcon icon={faEnvelope} size="lg" className="ml-4" />{" "}
                 contato@lufarma.com.br
               </small>
             </div>
@@ -69,7 +69,7 @@ export default function Header(props) {
               <a href="/contato">CONTATO</a>
             </li>
             <li className="header-navbar-item">
-              <button className="btn btn-sm btn-primary px-3">
+              <button className="btn btn-rounded btn-sm btn-primary px-3">
                 Faça seu pedido
               </button>
             </li>

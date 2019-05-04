@@ -9,7 +9,7 @@ export default function ActionButton(props) {
     <button
       id="action-button"
       type="button"
-      className="btn btn-success btn-sm px-3"
+      className="btn btn-rounded btn-success btn-sm px-3"
     >
       <FontAwesomeIcon icon={faWhatsapp} size="lg" /> WhatsApp now!
     </button>

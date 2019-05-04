@@ -7,7 +7,7 @@
   position: absolute;
   width: 100%;
   padding-top: 64px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.75);
   animation-duration: 1s;
   animation-name: fadeout;
 }
@@ -42,12 +42,12 @@
     background-color: rgba(255, 255, 255, 1);
   }
   to {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
   }
 }
 @keyframes fadein {
   from {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
   }
   to {
     background-color: rgba(255, 255, 255, 1);

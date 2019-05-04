@@ -1,9 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronCircleDown,
-  faQuoteLeft
-} from "@fortawesome/free-solid-svg-icons";
+import { faChevronCircleDown, faTag } from "@fortawesome/free-solid-svg-icons";
 
 import "./Home.scss";
 
@@ -16,10 +13,8 @@ const SectionBanner = props => (
         style={{ marginTop: "30vh" }}
       >
         <div className="row mt-5">
-          <div className="col-8">
-            <h6>
-              LUFARMA DISTRIBUIDORA FARMACÊUTICA
-            </h6>
+          <div className="col-8 mt-5">
+            <h6>LUFARMA DISTRIBUIDORA FARMACÊUTICA</h6>
             <h1>
               UMA BUSCA PERMANENTE PELA <strong>EXCELÊNCIA E QUALIDADE</strong>{" "}
               DOS PRODUTOS COMERCIALIZADOS
@@ -29,13 +24,13 @@ const SectionBanner = props => (
 
             <div className="form-row mt-5">
               <div className="col-4">
-                <button className="btn btn-warning btn-block btn-rounde">
-                  SOBRE
+                <button className="btn btn-rounded btn-warning btn-block">
+                  <FontAwesomeIcon icon={faTag} /> CATÁLOGO
                 </button>
               </div>
               <div className="col-4">
-                <button className="btn btn-light btn-block btn-rounde">
-                  CONTATO
+                <button className="btn btn-rounded btn-light btn-block">
+                  FAÇA SEU PEDIDO
                 </button>
               </div>
             </div>
@@ -62,62 +57,22 @@ const PageDownLink = props => (
   </div>
 );
 
-const SectionOrder = props => (
-  <section id="section-order" className="bg-warning">
+const SectionTelesales = props => (
+  <section id="section-telesales" className="bg-warning">
     <div className="container py-5 text-center">
       <h4>
-        <strong>FAÇA SEU PEDIDO</strong> ONLINE
+        <strong>TELEVENDAS</strong>
       </h4>
-      <button className="btn btn-sm btn-primary px-3">Faça seu pedido</button>
-    </div>
-  </section>
-);
+      {/* <span className="d-block">Segunda à sexta: 8h às 19h</span> */}
 
-const SectionPartners = props => (
-  <section id="section-partners" className="">
-    <div className="container py-5">
-      <div class="row">
-        <div class="col-2">
-          <img
-            className="partner-image"
-            src={require("../../assets/images/partners/ems.png")}
-            alt="ems"
-          />
+      <div className="row">
+        <div className="col-3 offset-3">
+          <small>Vitória da Conquista</small>
+          <h3>0800 284 5151</h3>
         </div>
-        <div class="col-2">
-          <img
-            className="partner-image"
-            src={require("../../assets/images/partners/globo.png")}
-            alt="globo"
-          />
-        </div>
-        <div class="col-2">
-          <img
-            className="partner-image"
-            src={require("../../assets/images/partners/medley.png")}
-            alt="medley"
-          />
-        </div>
-        <div class="col-2">
-          <img
-            className="partner-image"
-            src={require("../../assets/images/partners/mult.png")}
-            alt="mult"
-          />
-        </div>
-        <div class="col-2">
-          <img
-            className="partner-image"
-            src={require("../../assets/images/partners/natulab.png")}
-            alt="natulab"
-          />
-        </div>
-        <div class="col-2">
-          <img
-            className="partner-image"
-            src={require("../../assets/images/partners/neo.png")}
-            alt="neo"
-          />
+        <div className="col-3">
+          <small>Feira de Santana</small>
+          <h3>0800 600 5152</h3>
         </div>
       </div>
     </div>
@@ -129,8 +84,7 @@ export default function Home(props) {
     <>
       <SectionBanner />
       <PageDownLink />
-      <SectionOrder />
-      <SectionPartners />
+      <SectionTelesales />
     </>
   );
 }

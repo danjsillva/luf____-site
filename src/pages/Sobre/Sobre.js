@@ -13,7 +13,7 @@ const SectionBanner = props => (
 );
 
 const SectionMVV = props => (
-  <section id="section-mvv" className="bg-warnin">
+  <section id="section-mvv" className="bg-warning">
     <div className="container py-5">
       <div className="row mt-4 mb-5">
         <div class="col-4 mvv-card">
