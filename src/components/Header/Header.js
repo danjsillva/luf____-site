@@ -7,10 +7,15 @@ import "./Header.scss";
 import Logo from "../../assets/images/logo.png";
 
 export default function Header(props) {
-  const [navbarStyle, setNavbarStyle] = useState("header-navbar-home");
+  const [navbarStyle, setNavbarStyle] = useState(
+    window.location.pathname == "/" ? "header-navbar-home" : "header-navbar"
+  );
 
   const handleScroll = () => {
-    if (document.documentElement.scrollTop > 72) {
+    if (
+      document.documentElement.scrollTop > 72 ||
+      window.location.pathname != "/"
+    ) {
       setNavbarStyle("header-navbar");
     } else {
       setNavbarStyle("header-navbar-home");
@@ -46,7 +51,9 @@ export default function Header(props) {
       <div className={navbarStyle}>
         <div className="container navbar">
           <div>
-            <img src={Logo} alt="logo" />
+            <a href="/">
+              <img src={Logo} alt="logo" />
+            </a>
           </div>
           <ul className="header-navbar-menu">
             <li className="header-navbar-item">

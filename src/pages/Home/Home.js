@@ -12,13 +12,40 @@ const SectionBanner = props => (
     <div className="container">
       <div
         id="home-banner-text"
-        className="text-primar text-right float-right w-50"
-        style={{ marginTop: "50vh" }}
+        className="text-white float-left"
+        style={{ marginTop: "30vh" }}
       >
-        <h2>
-          UMA BUSCA PERMANENTE PELA <strong>EXCELÊNCIA E QUALIDADE</strong> DOS
-          PRODUTOS COMERCIALIZADOS
-        </h2>
+        <div className="row mt-5">
+          <div className="col-8">
+            <h6>
+              LUFARMA DISTRIBUIDORA FARMACÊUTICA
+            </h6>
+            <h1>
+              UMA BUSCA PERMANENTE PELA <strong>EXCELÊNCIA E QUALIDADE</strong>{" "}
+              DOS PRODUTOS COMERCIALIZADOS
+            </h1>
+
+            {/* <FontAwesomeIcon icon={faQuoteLeft} /> */}
+
+            <div className="form-row mt-5">
+              <div className="col-4">
+                <button className="btn btn-warning btn-block btn-rounde">
+                  SOBRE
+                </button>
+              </div>
+              <div className="col-4">
+                <button className="btn btn-light btn-block btn-rounde">
+                  CONTATO
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="col-4">
+            <h5 className="text-warning">
+              {/* <strong>LUFARMA</strong> DISTRIBUIDORA FARMAC LTDA */}
+            </h5>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -42,46 +69,6 @@ const SectionOrder = props => (
         <strong>FAÇA SEU PEDIDO</strong> ONLINE
       </h4>
       <button className="btn btn-sm btn-primary px-3">Faça seu pedido</button>
-    </div>
-  </section>
-);
-
-const SectionMVV = props => (
-  <section id="section-mvv" className="bg-warnin">
-    <div className="container py-5">
-      <div className="row mt-4 mb-5">
-        <div class="col-4 mvv-card">
-          <div className="mvv-title">
-            <FontAwesomeIcon icon={faQuoteLeft} size="3x" />
-            <span className="font-weight-bold ml-2">MISSÃO</span>
-          </div>
-          <div className="mvv-text">
-            A Missão da Lufarma define-se na comercialização de produtos que
-            promovam saúde e bem estar dos indivíduos.
-          </div>
-        </div>
-        <div class="col-4 mvv-card">
-          <div className="mvv-title">
-            <FontAwesomeIcon icon={faQuoteLeft} size="3x" />
-            <span className="font-weight-bold ml-2">VISÃO</span>
-          </div>
-          <div className="mvv-text">
-            Buscar permanentemente um grau de excelência no conhecimento e na
-            qualidade dos produtos comercializados, compartilhando experiências
-            para o beneficio dos seus clientes.
-          </div>
-        </div>
-        <div class="col-4 mvv-card">
-          <div className="mvv-title">
-            <FontAwesomeIcon icon={faQuoteLeft} size="3x" />
-            <span className="font-weight-bold ml-2">VALORES</span>
-          </div>
-          <div className="mvv-text">
-            Cliente como razão da existência da organização. Relacionamento
-            ético e transparente com clientes e investidores.
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 );
@@ -142,7 +129,6 @@ export default function Home(props) {
     <>
       <SectionBanner />
       <PageDownLink />
-      <SectionMVV />
       <SectionOrder />
       <SectionPartners />
     </>
