@@ -118,38 +118,38 @@ export default function Footer(props) {
                 <h5 className="text-warning">
                   <strong>SOCIAL</strong> E CONTATO
                 </h5>
-                <a className="text-white" href="">
+                <a className="text-white" href="/">
                   <FontAwesomeIcon icon={faFacebook} size="3x" />
                 </a>
-                <a className="text-white ml-3" href="">
+                <a className="text-white ml-3" href="/">
                   <FontAwesomeIcon icon={faInstagram} size="3x" />
                 </a>
-                <a className="text-white ml-3" href="">
+                <a className="text-white ml-3" href="/">
                   <FontAwesomeIcon icon={faWhatsapp} size="3x" />
                 </a>
-                <a className="text-white ml-3" href="">
+                <a className="text-white ml-3" href="/">
                   <FontAwesomeIcon icon={faSkype} size="3x" />
                 </a>
-                <a className="text-white ml-3" href="">
+                <a className="text-white ml-3" href="/">
                   <FontAwesomeIcon icon={faEnvelope} size="3x" />
                 </a>
 
                 <h5 className="text-warning mt-5">
                   <strong>LINKS</strong> ÚTEIS
                 </h5>
-                <a className="text-white d-block" href="">
+                <a className="text-white d-block" href="/">
                   Anvisa
                 </a>
-                <a className="text-white d-block" href="">
+                <a className="text-white d-block" href="/">
                   Sefaz
                 </a>
-                <a className="text-white d-block" href="">
+                <a className="text-white d-block" href="/">
                   Receita Federal
                 </a>
-                <a className="text-white d-block" href="">
+                <a className="text-white d-block" href="/">
                   Sintegra
                 </a>
-                <a className="text-white d-block" href="">
+                <a className="text-white d-block" href="/">
                   Vigilância Sanitária
                 </a>
               </div>

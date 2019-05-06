@@ -9,7 +9,7 @@ import "./Header.scss";
 export default function Header(props) {
   const [logo, setLogo] = useState(require("../../assets/images/logo-alt.png"));
   const [navbarStyle, setNavbarStyle] = useState(
-    window.location.pathname == "/" ? "header-navbar-home" : "header-navbar"
+    window.location.pathname === "/" ? "header-navbar-home" : "header-navbar"
   );
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function Header(props) {
   });
 
   useEffect(() => {
-    if (window.location.pathname != "/") {
+    if (window.location.pathname !== "/") {
       // setNavbarStyle("header-navbar");
       setLogo(require("../../assets/images/logo.png"));
     } else {
@@ -30,7 +30,7 @@ export default function Header(props) {
   const handleScroll = () => {
     if (
       document.documentElement.scrollTop > 84 ||
-      window.location.pathname != "/"
+      window.location.pathname !== "/"
     ) {
       setNavbarStyle("header-navbar");
       setLogo(require("../../assets/images/logo.png"));
@@ -40,9 +40,9 @@ export default function Header(props) {
     }
   };
 
-  const handleHashChange = () => {
-    window.scrollTo(window.scrollX, window.scrollY - 64);
-  };
+  // const handleHashChange = () => {
+  //   window.scrollTo(window.scrollX, window.scrollY - 64);
+  // };
 
   return (
     <header>
@@ -63,7 +63,7 @@ export default function Header(props) {
             </div>
             <div className="col-sm-12 col-md-6 text-right d-none d-md-block">
               <small>
-                <a href="" className="text-white">
+                <a href="/" className="text-white">
                   Acessar WebMail
                 </a>
               </small>

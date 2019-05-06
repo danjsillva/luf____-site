@@ -55,7 +55,7 @@ const PageDownLink = props => (
     className="text-center w-100"
     style={{ marginTop: "-48px", position: "absolute" }}
   >
-    <a href="" className="text-warning">
+    <a href="/" className="text-warning">
       <FontAwesomeIcon icon={faChevronCircleDown} size="2x" />
     </a>
   </div>
