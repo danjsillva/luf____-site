@@ -1,3 +1,6 @@
+$primary: #3e4095;
+$secondary: #1a1b49;
+
 .header-topbar {
   color: white;
   background-color: #1a1b49;
@@ -7,7 +10,7 @@
   position: absolute;
   width: 100%;
   padding-top: 64px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.1);
   animation-duration: 1s;
   animation-name: fadeout;
 }
@@ -22,6 +25,16 @@
   animation-duration: 0s;
   animation-name: fadein;
 }
+.header-navbar a {
+  color: $primary !important;
+}
+.header-navbar a:hover {
+  color: $primary !important;
+  padding-bottom: 4px;
+  border-bottom: solid $primary 1px !important;
+  animation-duration: 1s;
+  animation-name: fadein-line;
+}
 
 .header-navbar-menu {
   margin-top: 5px;
@@ -34,7 +47,17 @@
   margin-right: 10px;
 }
 .header-navbar-item a {
+  color: white;
   text-decoration: none !important;
+  // animation-duration: 1s;
+  // animation-name: fadeout-line;
+}
+.header-navbar-item a:hover {
+  color: white;
+  padding-bottom: 4px;
+  border-bottom: solid white 1px;
+  animation-duration: 1s;
+  animation-name: fadein-line;
 }
 
 @keyframes fadeout {
@@ -42,14 +65,35 @@
     background-color: rgba(255, 255, 255, 1);
   }
   to {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
 @keyframes fadein {
   from {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.1);
   }
   to {
     background-color: rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes fadeout-line {
+  from {
+    // border-color: rgba(255, 255, 255, 1);
+    opacity: 1px;
+  }
+  to {
+    // border-color: rgba(255, 255, 255, 0.1);
+    opacity: 0px;
+  }
+}
+@keyframes fadein-line {
+  from {
+    // border-color: rgba(255, 255, 255, 0.1);
+    opacity: 0px;
+  }
+  to {
+    // border-color: rgba(255, 255, 255, 1);
+    opacity: 1px;
   }
 }

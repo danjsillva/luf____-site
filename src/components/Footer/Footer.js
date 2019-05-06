@@ -11,12 +11,12 @@ import {
 import "./Footer.scss";
 
 const SectionOrder = props => (
-  <section id="section-order" className="bg-warning">
-    <div className="container py-5 text-center">
+  <section id="section-order" className="bg-primary">
+    <div className="container py-5 text-center text-white">
       <h4>
         <strong>FAÇA SEU PEDIDO</strong> ONLINE
       </h4>
-      <button className="btn btn-rounded btn-sm btn-primary px-3">
+      <button className="btn btn-rounded btn-sm btn-warning px-3">
         Faça seu pedido
       </button>
     </div>
@@ -27,42 +27,42 @@ const SectionPartners = props => (
   <section id="section-partners" className="">
     <div className="container py-5">
       <div class="row">
-        <div class="col-2">
+        <div class="col-md-2 col-4">
           <img
             className="partner-image"
             src={require("../../assets/images/partners/ems.png")}
             alt="ems"
           />
         </div>
-        <div class="col-2">
+        <div class="col-md-2 col-4">
           <img
             className="partner-image"
             src={require("../../assets/images/partners/globo.png")}
             alt="globo"
           />
         </div>
-        <div class="col-2">
+        <div class="col-md-2 col-4">
           <img
             className="partner-image"
             src={require("../../assets/images/partners/medley.png")}
             alt="medley"
           />
         </div>
-        <div class="col-2">
+        <div class="col-md-2 col-4">
           <img
             className="partner-image"
             src={require("../../assets/images/partners/mult.png")}
             alt="mult"
           />
         </div>
-        <div class="col-2">
+        <div class="col-md-2 col-4">
           <img
             className="partner-image"
             src={require("../../assets/images/partners/natulab.png")}
             alt="natulab"
           />
         </div>
-        <div class="col-2">
+        <div class="col-md-2 col-4">
           <img
             className="partner-image"
             src={require("../../assets/images/partners/neo.png")}

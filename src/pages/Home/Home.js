@@ -2,6 +2,10 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleDown, faTag } from "@fortawesome/free-solid-svg-icons";
 
+import Product1 from "../../assets/images/products/product-1.jpg";
+import Product2 from "../../assets/images/products/product-2.jpg";
+import Product3 from "../../assets/images/products/product-3.jpg";
+
 import "./Home.scss";
 
 const SectionBanner = props => (
@@ -14,22 +18,22 @@ const SectionBanner = props => (
       >
         <div className="row mt-5">
           <div className="col-8 mt-5">
-            <h6>LUFARMA DISTRIBUIDORA FARMACÊUTICA</h6>
-            <h1>
+            <h1 className="d-none d-md-block">
               UMA BUSCA PERMANENTE PELA <strong>EXCELÊNCIA E QUALIDADE</strong>{" "}
               DOS PRODUTOS COMERCIALIZADOS
             </h1>
 
+            <h6>LUFARMA DISTRIBUIDORA FARMACÊUTICA</h6>
             {/* <FontAwesomeIcon icon={faQuoteLeft} /> */}
 
             <div className="form-row mt-5">
-              <div className="col-4">
-                <button className="btn btn-rounded btn-warning btn-block">
+              <div className="col-12 col-md-4">
+                <button className="btn btn-rounded btn-secondary btn-block">
                   <FontAwesomeIcon icon={faTag} /> CATÁLOGO
                 </button>
               </div>
-              <div className="col-4">
-                <button className="btn btn-rounded btn-light btn-block">
+              <div className="col-12 col-md-4">
+                <button className="btn btn-rounded btn-warning btn-block">
                   FAÇA SEU PEDIDO
                 </button>
               </div>
@@ -51,10 +55,28 @@ const PageDownLink = props => (
     className="text-center w-100"
     style={{ marginTop: "-48px", position: "absolute" }}
   >
-    <a href="#section-mvv" className="text-warning">
+    <a href="" className="text-warning">
       <FontAwesomeIcon icon={faChevronCircleDown} size="2x" />
     </a>
   </div>
+);
+
+const SectionProducts = props => (
+  <section id="section-products" className="">
+    <div className="containe py-">
+      <div className="row no-gutters">
+        <div className="col">
+          <img src={Product1} alt="" className="product-image" />
+        </div>
+        <div className="col">
+          <img src={Product2} alt="" className="product-image" />
+        </div>
+        <div className="col">
+          <img src={Product3} alt="" className="product-image" />
+        </div>
+      </div>
+    </div>
+  </section>
 );
 
 const SectionTelesales = props => (
@@ -66,11 +88,11 @@ const SectionTelesales = props => (
       {/* <span className="d-block">Segunda à sexta: 8h às 19h</span> */}
 
       <div className="row">
-        <div className="col-3 offset-3">
+        <div className="col-12 col-md-3 offset-md-3">
           <small>Vitória da Conquista</small>
           <h3>0800 284 5151</h3>
         </div>
-        <div className="col-3">
+        <div className="col-12 col-md-3">
           <small>Feira de Santana</small>
           <h3>0800 600 5152</h3>
         </div>
@@ -85,6 +107,7 @@ export default function Home(props) {
       <SectionBanner />
       <PageDownLink />
       <SectionTelesales />
+      <SectionProducts />
     </>
   );
 }

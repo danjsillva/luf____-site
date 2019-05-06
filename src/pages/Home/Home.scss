@@ -24,16 +24,16 @@
   transition: all 0.5s ease;
 }
 
-.partner-image {
+.product-image {
+  cursor: pointer;
   max-width: 100%;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: all 0.5s ease;
 }
-.partner-image:hover {
-  max-width: 100%;
-  transform: scale(1.05);
+.product-image:hover {
+  // transform: scale(1.05);
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   filter: grayscale(0%);
