@@ -75,7 +75,7 @@ export default function Header(props) {
         <div className="container navbar">
           <div>
             {/* <a href="/"> */}
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" class="header-navbar-logo" />
             {/* </a> */}
           </div>
           <ul className="header-navbar-menu">

@@ -36,8 +36,12 @@ $secondary: #1a1b49;
   animation-name: fadein-line;
 }
 
+.header-navbar-logo {
+  width: 256px;
+}
+
 .header-navbar-menu {
-  margin-top: 5px;
+  margin-top: 25px;
   margin-bottom: 5px;
   list-style-type: none;
 }

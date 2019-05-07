@@ -13,18 +13,6 @@
     cover;
 }
 
-.mvv-card:hover > .mvv-title {
-  margin-left: 10px;
-  transform: scale(1.15);
-}
-.mvv-title {
-  margin-bottom: 5px;
-  transition: all 0.5s ease;
-}
-.mvv-text {
-  transition: all 0.5s ease;
-}
-
 .product-image {
   cursor: pointer;
   max-width: 100%;

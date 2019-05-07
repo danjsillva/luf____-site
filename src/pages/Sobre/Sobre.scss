@@ -4,3 +4,15 @@
   background: url("../../assets/images/peoples-lab-2.jpg") no-repeat 50% fixed /
     cover;
 }
+
+.mvv-card:hover > .mvv-title {
+  margin-left: 10px;
+  transform: scale(1.15);
+}
+.mvv-title {
+  margin-bottom: 5px;
+  transition: all 0.5s ease;
+}
+.mvv-text {
+  transition: all 0.5s ease;
+}
