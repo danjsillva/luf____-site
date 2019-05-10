@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeadset, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,30 +9,25 @@ import "./Header.scss";
 
 export default function Header(props) {
   const [logo, setLogo] = useState(require("../../assets/images/logo-alt.png"));
-  const [navbarStyle, setNavbarStyle] = useState(
-    window.location.pathname === "/" ? "header-navbar-home" : "header-navbar"
-  );
+  const [navbarStyle, setNavbarStyle] = useState("header-navbar-home");
 
   useEffect(() => {
     window.onscroll = () => handleScroll();
     // window.onhashchange = () => handleHashChange();
   });
 
-  useEffect(() => {
-    if (window.location.pathname !== "/") {
-      // setNavbarStyle("header-navbar");
-      setLogo(require("../../assets/images/logo.png"));
-    } else {
-      // setNavbarStyle("header-navbar-home");
-      setLogo(require("../../assets/images/logo-alt.png"));
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.location.pathname !== "/") {
+  //     // setNavbarStyle("header-navbar");
+  //     setLogo(require("../../assets/images/logo.png"));
+  //   } else {
+  //     // setNavbarStyle("header-navbar-home");
+  //     setLogo(require("../../assets/images/logo-alt.png"));
+  //   }
+  // }, []);
 
   const handleScroll = () => {
-    if (
-      document.documentElement.scrollTop > 84 ||
-      window.location.pathname !== "/"
-    ) {
+    if (document.documentElement.scrollTop > 84) {
       setNavbarStyle("header-navbar");
       setLogo(require("../../assets/images/logo.png"));
     } else {
@@ -75,24 +71,32 @@ export default function Header(props) {
         <div className="container navbar">
           <div>
             {/* <a href="/"> */}
-            <img src={logo} alt="logo" class="header-navbar-logo" />
+            <img src={logo} alt="logo" className="header-navbar-logo" />
             {/* </a> */}
           </div>
           <ul className="header-navbar-menu">
             <li className="header-navbar-item">
-              <a href="/">HOME</a>
+              <Link to="/">HOME</Link>
             </li>
             <li className="header-navbar-item">
-              <a href="/sobre">SOBRE</a>
+              <Link to="/sobre">SOBRE</Link>
             </li>
             <li className="header-navbar-item">
-              <a href="/catalogo">CATÁLOGO</a>
+              <Link to="/servicos">SERVIÇOS</Link>
             </li>
+            {/* <li className="header-navbar-item">
+              <Link to="/catalogo">CATÁLOGO</Link>
+            </li> */}
+            {/* <li className="header-navbar-item">
+              <Link to="/contato">CONTATO</Link>
+            </li> */}
             <li className="header-navbar-item">
-              <a href="/contato">CONTATO</a>
-            </li>
-            <li className="header-navbar-item">
-              <button className="btn btn-rounded btn-sm btn-warning px-3">
+              <button
+                className="btn btn-rounded btn-sm btn-warning px-3"
+                onClick={() =>
+                  window.open("http://lufarma.resultwebvendas.com.br/#/login")
+                }
+              >
                 Faça seu pedido
               </button>
             </li>

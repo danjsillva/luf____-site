@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -16,7 +17,12 @@ const SectionOrder = props => (
       <h4>
         <strong>FAÇA SEU PEDIDO</strong> ONLINE
       </h4>
-      <button className="btn btn-rounded btn-sm btn-warning px-3">
+      <button
+        className="btn btn-rounded btn-sm btn-warning px-3"
+        onClick={() =>
+          window.open("http://lufarma.resultwebvendas.com.br/#/login")
+        }
+      >
         Faça seu pedido
       </button>
     </div>
@@ -26,43 +32,43 @@ const SectionOrder = props => (
 const SectionPartners = props => (
   <section id="section-partners" className="">
     <div className="container py-5">
-      <div class="row">
-        <div class="col-md-2 col-4">
+      <div className="row">
+        <div className="col-md-2 col-4">
           <img
             className="partner-image"
             src={require("../../assets/images/partners/ems.png")}
             alt="ems"
           />
         </div>
-        <div class="col-md-2 col-4">
+        <div className="col-md-2 col-4">
           <img
             className="partner-image"
             src={require("../../assets/images/partners/globo.png")}
             alt="globo"
           />
         </div>
-        <div class="col-md-2 col-4">
+        <div className="col-md-2 col-4">
           <img
             className="partner-image"
             src={require("../../assets/images/partners/medley.png")}
             alt="medley"
           />
         </div>
-        <div class="col-md-2 col-4">
+        <div className="col-md-2 col-4">
           <img
             className="partner-image"
             src={require("../../assets/images/partners/mult.png")}
             alt="mult"
           />
         </div>
-        <div class="col-md-2 col-4">
+        <div className="col-md-2 col-4">
           <img
             className="partner-image"
             src={require("../../assets/images/partners/natulab.png")}
             alt="natulab"
           />
         </div>
-        <div class="col-md-2 col-4">
+        <div className="col-md-2 col-4">
           <img
             className="partner-image"
             src={require("../../assets/images/partners/neo.png")}
@@ -94,9 +100,9 @@ export default function Footer(props) {
                 <span className="d-block">contato@lufarma.com.br</span>
                 <span className="d-block mb-4">www.lufarma.com.br</span>
 
-                <button className="btn btn-rounded btn-primary btn-sm px-3 mb-5">
+                <Link to="/sobre" className="btn btn-rounded btn-primary btn-sm px-3 mb-5">
                   Trabalhe conosco
-                </button>
+                </Link>
               </div>
 
               <div className="col-sm-12 col-md-4">
@@ -118,38 +124,58 @@ export default function Footer(props) {
                 <h5 className="text-warning">
                   <strong>SOCIAL</strong> E CONTATO
                 </h5>
-                <a className="text-white" href="/">
+                <a className="text-white" href="/" target="blank">
                   <FontAwesomeIcon icon={faFacebook} size="3x" />
                 </a>
-                <a className="text-white ml-3" href="/">
+                <a className="text-white ml-3" href="/" target="blank">
                   <FontAwesomeIcon icon={faInstagram} size="3x" />
                 </a>
-                <a className="text-white ml-3" href="/">
+                <a className="text-white ml-3" href="https://wa.me/557599601703" target="blank">
                   <FontAwesomeIcon icon={faWhatsapp} size="3x" />
                 </a>
-                <a className="text-white ml-3" href="/">
+                <a className="text-white ml-3" href="/" target="blank">
                   <FontAwesomeIcon icon={faSkype} size="3x" />
                 </a>
-                <a className="text-white ml-3" href="/">
+                <a className="text-white ml-3" href="/" target="blank">
                   <FontAwesomeIcon icon={faEnvelope} size="3x" />
                 </a>
 
                 <h5 className="text-warning mt-5">
                   <strong>LINKS</strong> ÚTEIS
                 </h5>
-                <a className="text-white d-block" href="/">
+                <a
+                  className="text-white d-block"
+                  href="http://portal.anvisa.gov.br/"
+                  target="blank"
+                >
                   Anvisa
                 </a>
-                <a className="text-white d-block" href="/">
+                <a
+                  className="text-white d-block"
+                  href="http://www.nfe.fazenda.gov.br/portal/principal.aspx"
+                  target="blank"
+                >
                   Sefaz
                 </a>
-                <a className="text-white d-block" href="/">
+                <a
+                  className="text-white d-block"
+                  href="https://www.receita.fazenda.gov.br/"
+                  target="blank"
+                >
                   Receita Federal
                 </a>
-                <a className="text-white d-block" href="/">
+                <a
+                  className="text-white d-block"
+                  href="http://www.sintegra.gov.br/"
+                  target="blank"
+                >
                   Sintegra
                 </a>
-                <a className="text-white d-block" href="/">
+                <a
+                  className="text-white d-block"
+                  href="http://portal.anvisa.gov.br/vigilancia-sanitaria-no-brasil"
+                  target="blank"
+                >
                   Vigilância Sanitária
                 </a>
               </div>

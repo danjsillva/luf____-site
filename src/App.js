@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
@@ -11,7 +11,7 @@ import './App.scss';
 
 export default function App(props) {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
 
       <Router />
@@ -19,6 +19,6 @@ export default function App(props) {
       <Footer />
       
       <ActionButton />
-    </BrowserRouter>
+    </HashRouter>
   );
 }

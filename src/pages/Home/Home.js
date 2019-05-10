@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleDown, faTag } from "@fortawesome/free-solid-svg-icons";
 
@@ -27,13 +28,18 @@ const SectionBanner = props => (
             {/* <FontAwesomeIcon icon={faQuoteLeft} /> */}
 
             <div className="form-row mt-5">
-              <div className="col-12 col-md-4">
-                <button className="btn btn-rounded btn-secondary btn-block">
+              {/* <div className="col-12 col-md-4">
+                <Link to="/catalogo" className="btn btn-rounded btn-secondary btn-block">
                   <FontAwesomeIcon icon={faTag} /> CATÁLOGO
-                </button>
-              </div>
+                </Link>
+              </div> */}
               <div className="col-12 col-md-4">
-                <button className="btn btn-rounded btn-warning btn-block">
+                <button
+                  className="btn btn-rounded btn-warning btn-block"
+                  onClick={() =>
+                    window.open("http://lufarma.resultwebvendas.com.br/#/login")
+                  }
+                >
                   FAÇA SEU PEDIDO
                 </button>
               </div>
@@ -53,11 +59,11 @@ const SectionBanner = props => (
 const PageDownLink = props => (
   <div
     className="text-center w-100"
-    style={{ marginTop: "-48px", position: "absolute" }}
+    style={{ marginTop: "-48px", position: "absolute", cursor: 'pointer' }}
   >
-    <a href="/" className="text-warning">
+    <span href="/" className="text-warning" onClick={() => window.scrollTo(window.scrollX, window.innerHeight - 72)}>
       <FontAwesomeIcon icon={faChevronCircleDown} size="2x" />
-    </a>
+    </span>
   </div>
 );
 

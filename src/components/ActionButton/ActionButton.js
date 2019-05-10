@@ -10,6 +10,7 @@ export default function ActionButton(props) {
       id="action-button"
       type="button"
       className="btn btn-rounded btn-success btn-sm px-3 d-none d-md-block"
+      onClick={() => window.open("https://wa.me/557599601703")}
     >
       <FontAwesomeIcon icon={faWhatsapp} size="lg" /> WHATSAPP
     </button>

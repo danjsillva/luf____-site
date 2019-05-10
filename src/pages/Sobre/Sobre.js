@@ -10,7 +10,7 @@ const SectionBanner = props => (
       <div
         id="sobre-banner-text"
         className="text-white"
-        style={{ paddingTop: 192 }}
+        style={{ paddingTop: 250 }}
       >
         <h2><strong>SOBRE</strong> NÓS</h2>
       </div>
@@ -22,7 +22,7 @@ const SectionMVV = props => (
   <section id="section-mvv" className="bg-warning">
     <div className="container py-5">
       <div className="row mt-4 mb-5">
-        <div class="col-12 col-md-4 mvv-card">
+        <div className="col-12 col-md-4 mvv-card">
           <div className="mvv-title">
             <FontAwesomeIcon icon={faQuoteLeft} size="3x" />
             <span className="font-weight-bold ml-2">MISSÃO</span>
@@ -32,7 +32,7 @@ const SectionMVV = props => (
             promovam saúde e bem estar dos indivíduos.
           </div>
         </div>
-        <div class="col-12 col-md-4 mvv-card">
+        <div className="col-12 col-md-4 mvv-card">
           <div className="mvv-title">
             <FontAwesomeIcon icon={faQuoteLeft} size="3x" />
             <span className="font-weight-bold ml-2">VISÃO</span>
@@ -43,7 +43,7 @@ const SectionMVV = props => (
             para o beneficio dos seus clientes.
           </div>
         </div>
-        <div class="col-12 col-md-4 mvv-card">
+        <div className="col-12 col-md-4 mvv-card">
           <div className="mvv-title">
             <FontAwesomeIcon icon={faQuoteLeft} size="3x" />
             <span className="font-weight-bold ml-2">VALORES</span>
