@@ -11,9 +11,24 @@ import {
 
 import "./Footer.scss";
 
+const SectionServices = props => (
+  <section className="bg-warning">
+    <div className="container py-5 text-center">
+      <h4>
+        <strong>REIMPRESSÃO</strong> DE BOLETOS
+      </h4>
+      <Link to="servicos" className="btn btn-rounded btn-sm btn-primary px-3">
+        Boletos e Serviços
+      </Link>
+    </div>
+  </section>
+);
+
 const SectionOrder = props => (
   <section id="section-order" className="bg-primary">
     <div className="container py-5 text-center text-white">
+      {/* <div className="row">
+        <div className="col-6"> */}
       <h4>
         <strong>FAÇA SEU PEDIDO</strong> ONLINE
       </h4>
@@ -25,6 +40,19 @@ const SectionOrder = props => (
       >
         Faça seu pedido
       </button>
+      {/* </div> */}
+      {/* <div className="col-6">
+          <h4>
+            <strong>REIMPRESSÃO</strong> DE BOLETOS
+          </h4>
+          <Link
+            to="servicos"
+            className="btn btn-rounded btn-sm btn-warning px-3"
+          >
+            Boletos e Serviços
+          </Link>
+        </div> */}
+      {/* </div> */}
     </div>
   </section>
 );
@@ -83,6 +111,7 @@ const SectionPartners = props => (
 export default function Footer(props) {
   return (
     <>
+      <SectionServices />
       <SectionPartners />
       <SectionOrder />
       <footer>

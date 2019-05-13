@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarcode, faLink } from "@fortawesome/free-solid-svg-icons";
 
@@ -13,7 +14,7 @@ const SectionBanner = props => (
         style={{ paddingTop: 250 }}
       >
         <h2>
-          <strong>SERVIÇOS</strong> E LINKS ÚTEIS
+          <strong>BOLETOS</strong> E SERVIÇOS
         </h2>
       </div>
     </div>
@@ -104,10 +105,6 @@ export default function Servicos(props) {
     <>
       <SectionBanner />
       <SectionBanks />
-
-      <section className="bg-warning">
-        <div className="container py-5" />
-      </section>
     </>
   );
 }

@@ -2,11 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleDown, faTag } from "@fortawesome/free-solid-svg-icons";
+import Slider from "react-slick";
 
 import Product1 from "../../assets/images/products/product-1.jpg";
 import Product2 from "../../assets/images/products/product-2.jpg";
 import Product3 from "../../assets/images/products/product-3.jpg";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./Home.scss";
 
 const SectionBanner = props => (
@@ -59,18 +62,69 @@ const SectionBanner = props => (
 const PageDownLink = props => (
   <div
     className="text-center w-100"
-    style={{ marginTop: "-48px", position: "absolute", cursor: 'pointer' }}
+    style={{ marginTop: "-48px", position: "absolute", cursor: "pointer" }}
   >
-    <span href="/" className="text-warning" onClick={() => window.scrollTo(window.scrollX, window.innerHeight - 72)}>
+    <span
+      href="/"
+      className="text-warning"
+      onClick={() => window.scrollTo(window.scrollX, window.innerHeight - 72)}
+    >
       <FontAwesomeIcon icon={faChevronCircleDown} size="2x" />
     </span>
   </div>
 );
 
-const SectionProducts = props => (
-  <section id="section-products" className="">
-    <div className="containe py-">
-      <div className="row no-gutters">
+const SectionProducts = props => {
+  const settings = {
+    arrows: true,
+    autoplay: true,
+  };
+
+  return (
+    <section id="section-products" className="">
+      <div className="containe">
+        <Slider {...settings}>
+          <div>
+            <div className="row no-gutters">
+              <div className="col">
+                <img src={Product1} alt="" className="product-image" />
+              </div>
+              <div className="col">
+                <img src={Product2} alt="" className="product-image" />
+              </div>
+              <div className="col">
+                <img src={Product3} alt="" className="product-image" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="row no-gutters">
+              <div className="col">
+                <img src={Product1} alt="" className="product-image" />
+              </div>
+              <div className="col">
+                <img src={Product2} alt="" className="product-image" />
+              </div>
+              <div className="col">
+                <img src={Product3} alt="" className="product-image" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="row no-gutters">
+              <div className="col">
+                <img src={Product1} alt="" className="product-image" />
+              </div>
+              <div className="col">
+                <img src={Product2} alt="" className="product-image" />
+              </div>
+              <div className="col">
+                <img src={Product3} alt="" className="product-image" />
+              </div>
+            </div>
+          </div>
+        </Slider>
+        {/* <div className="row no-gutters">
         <div className="col">
           <img src={Product1} alt="" className="product-image" />
         </div>
@@ -80,10 +134,11 @@ const SectionProducts = props => (
         <div className="col">
           <img src={Product3} alt="" className="product-image" />
         </div>
+      </div> */}
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 const SectionTelesales = props => (
   <section id="section-telesales" className="bg-warning">

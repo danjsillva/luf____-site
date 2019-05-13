@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 
 import "./Sobre.scss";
+import Logo from "../../assets/images/logo.png";
 
 const SectionBanner = props => (
   <section id="sobre-banner">
@@ -12,7 +13,9 @@ const SectionBanner = props => (
         className="text-white"
         style={{ paddingTop: 250 }}
       >
-        <h2><strong>SOBRE</strong> NÓS</h2>
+        <h2>
+          <strong>SOBRE</strong> NÓS
+        </h2>
       </div>
     </div>
   </section>
@@ -63,6 +66,15 @@ export default function Sobre(props) {
     <>
       <SectionBanner />
       <SectionMVV />
+
+      <section className="bg-secondary py-5">
+        <div className="container text-white text-center w-75">
+          <h2 className="d-none d-md-block">
+            UMA BUSCA PERMANENTE PELA <strong>EXCELÊNCIA E QUALIDADE</strong>{" "}
+            DOS PRODUTOS COMERCIALIZADOS
+          </h2>
+        </div>
+      </section>
     </>
   );
 }

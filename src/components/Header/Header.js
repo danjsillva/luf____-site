@@ -86,7 +86,7 @@ export default function Header(props) {
               <Link to="/sobre">SOBRE</Link>
             </li>
             <li className="header-navbar-item">
-              <Link to="/servicos">SERVIÇOS</Link>
+              <Link to="/servicos">BOLETOS E SERVIÇOS</Link>
             </li>
             {/* <li className="header-navbar-item">
               <Link to="/catalogo">CATÁLOGO</Link>
