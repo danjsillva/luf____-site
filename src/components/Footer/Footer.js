@@ -100,7 +100,10 @@ export default function Footer(props) {
                 <span className="d-block">contato@lufarma.com.br</span>
                 <span className="d-block mb-4">www.lufarma.com.br</span>
 
-                <Link to="/sobre" className="btn btn-rounded btn-primary btn-sm px-3 mb-5">
+                <Link
+                  to="/sobre"
+                  className="btn btn-rounded btn-primary btn-sm px-3 mb-5"
+                >
                   Trabalhe conosco
                 </Link>
               </div>
@@ -124,13 +127,25 @@ export default function Footer(props) {
                 <h5 className="text-warning">
                   <strong>SOCIAL</strong> E CONTATO
                 </h5>
-                <a className="text-white" href="/" target="blank">
+                <a
+                  className="text-white"
+                  href="https://www.facebook.com/LufarmaDistribuidoraFarmaceutica/"
+                  target="blank"
+                >
                   <FontAwesomeIcon icon={faFacebook} size="3x" />
                 </a>
-                <a className="text-white ml-3" href="/" target="blank">
+                <a
+                  className="text-white ml-3"
+                  href="https://www.instagram.com/lufarmadistribuidora/"
+                  target="blank"
+                >
                   <FontAwesomeIcon icon={faInstagram} size="3x" />
                 </a>
-                <a className="text-white ml-3" href="https://wa.me/557599601703" target="blank">
+                <a
+                  className="text-white ml-3"
+                  href="https://wa.me/557599601703"
+                  target="blank"
+                >
                   <FontAwesomeIcon icon={faWhatsapp} size="3x" />
                 </a>
                 <a className="text-white ml-3" href="/" target="blank">

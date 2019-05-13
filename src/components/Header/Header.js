@@ -59,7 +59,11 @@ export default function Header(props) {
             </div>
             <div className="col-sm-12 col-md-6 text-right d-none d-md-block">
               <small>
-                <a href="/" className="text-white">
+                <a
+                  href="https://webmail-seguro.com.br/lufarma.com.br/"
+                  target="blank"
+                  className="text-white"
+                >
                   Acessar WebMail
                 </a>
               </small>
