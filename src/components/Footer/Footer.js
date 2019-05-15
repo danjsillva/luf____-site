@@ -12,12 +12,12 @@ import {
 import "./Footer.scss";
 
 const SectionServices = props => (
-  <section className="bg-warning">
-    <div className="container py-5 text-center">
+  <section className="bg-primary">
+    <div className="container py-5 text-center text-white">
       <h4>
         <strong>REIMPRESSÃO</strong> DE BOLETOS
       </h4>
-      <Link to="servicos" className="btn btn-rounded btn-sm btn-primary px-3">
+      <Link to="servicos" className="btn btn-rounded btn-sm btn-warning px-3">
         Boletos e Serviços
       </Link>
     </div>
@@ -25,15 +25,15 @@ const SectionServices = props => (
 );
 
 const SectionOrder = props => (
-  <section id="section-order" className="bg-primary">
-    <div className="container py-5 text-center text-white">
+  <section id="section-order" className="bg-warning">
+    <div className="container py-5 text-center">
       {/* <div className="row">
         <div className="col-6"> */}
       <h4>
         <strong>FAÇA SEU PEDIDO</strong> ONLINE
       </h4>
       <button
-        className="btn btn-rounded btn-sm btn-warning px-3"
+        className="btn btn-rounded btn-sm btn-primary px-3"
         onClick={() =>
           window.open("http://lufarma.resultwebvendas.com.br/#/login")
         }
